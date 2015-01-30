@@ -18,7 +18,7 @@
     <ul data-role="listview" data-inset="true">
     <li><a href>Datos Generales</a></li>
     <li><a href>Experiencia Laboral</a></li>
-    <li><a href>Educacion</a></li>
+    <li><a href="#pag4">Educacion</a></li>
     <li><a href>Otros Intereses</a></li>
   </ul>
 
@@ -29,10 +29,10 @@
       <div data-role="navbar">
         <ul>
           <li>
-            <a class="ui-btn-active" href="index1.html" data-icon="bars">Página 1</a>
+            <a class="ui-btn-active" href="pag1" data-icon="bars">Página 1</a>
           </li>
           <li>
-            <a href="index2.html" data-icon="gear">Página 2</a>
+            <a href="pag2" data-icon="gear">Página 2</a>
           </li>
         </ul>
       </div>
@@ -79,6 +79,95 @@
 
     </div>
 
+
+    <div data-role="page" id="pag3">
+      <div data-role="header" data-postition="fixed">
+        <h1>App 2<h1>
+        </div>
+
+        <div role="main">
+          <ul data-role="listview" data-filter="true"
+          data-filter-placeholder="Buscar Alumno" data-autodividers="true">
+          <li data-icon="info"><a href><img src="i/persona.png"/> Alejandra
+            <span class="ui-li-count">45</span></a></li>
+            <li data-icon="check"><a href>Alejandro</a></li>
+            <li data-icon="forbidden"><a href>David</a></li>
+            <li data-icon="refresh"><a href>Jansy</a></li>
+            <li data-icon="info"><a href><img src="i/persona.png"/><h4>Juan</h4><p>info del cliente</p></a></li>
+            <li><a href>Kenmy</a></li>
+            <li><a href>Manuel</a></li>
+            <li><a href>Ramon</a></li>
+            <li><a href>Ramon</a></li>
+          </ul>
+        </div>
+        <div data-role="footer" data-position="fixed">
+          <h1>Pie de pagina<h1>
+            <div data-role="navbar">
+              <ul>
+                <li>
+                  <a class="ui-btn-active" href="index.html" data-icon="bars">Página 1</a>
+                </li>
+                <li>
+                  <a href="index.html" data-icon="gear">Página 2</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <div data-role="page" id="pag4">
+          <div data-role="header" data-postition="fixed">
+            <h1>App 2<h1>
+            </div>
+
+            <div role="main">
+                <form id="formal">
+                <div> <label for="txt1">Un Campo de Texto</label>
+                  <input type="text" id="txt1" name="txt1"
+                  placeholder="Un Campo de Texto"/>
+                  </div>
+
+
+                  <div class="ui-field-contain">
+                    <label for="slider1">Un Slider</label>
+                  <input type="range" id="slider1"
+                  name="slider1" min="0" max="100"
+                   value="50" step="10"/>
+                  </div>
+
+                  <div class="ui-field-contain">
+                    <div data-role="rangeslider">
+                    <label for="slider2a">Presion Arterial</label>
+                    <input type="range" id="slider2a"
+                    name="slider2a" min="0" max="200"
+                    value="75" step="1"/>
+                    <label for="slider2b">Presion Arterial</label>
+                    <input type="range" id="slider2b"
+                    name="slider2b" min="0" max="200"
+                    value="75" step="1"/>
+                  </div>
+                </div>
+
+                </form>
+          </div>
+
+
+            <div data-role="footer" data-position="fixed">
+              <h1>Pie de pagina<h1>
+                <div data-role="navbar">
+                  <ul>
+                    <li>
+                      <a class="ui-btn-active" href="index.html" data-icon="bars">Página 1</a>
+                    </li>
+                    <li>
+                      <a href="index.html" data-icon="gear">Página 2</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
 
 
 
