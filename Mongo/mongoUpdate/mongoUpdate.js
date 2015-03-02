@@ -99,12 +99,7 @@ db.users.update(
 
    {
      $currentDate: {
-        lastlogon: true,
-        "cancellation.date": { $type: "timestamp" }
-     },
-     $set: {
-        "cancellation.reason": "hmw request"
-     }
+        lastlogon: true, { $type: "timestamp" }
    }
 )
 
@@ -116,10 +111,7 @@ var a = {"player":1, "items":1, "gadgets":1};
 db.hwdata.find({"player":"player1"}, a).pretty();
 
 db.hwdata.update(
-   {gadgets:"gadget"},
-   { $inc: { "gadget.defensepower": 20 } }
-)
-//{ item:"steel recover"  },
-//{ $inc: {  "items.magic": 20 } }
-
+   {player:"player1"},
+   { $inc: { "items.0.magic": 20 },"gadgets.1.defensepower":20 }}
+);
 */
